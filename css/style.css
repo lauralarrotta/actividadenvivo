@@ -1,0 +1,405 @@
+:root {
+    --amarillo: #FFD43B;
+    --blanco: #ffffff;
+    --blancosegundo: #FFFAFA;
+    --rojo: #F55556;
+    --RojoOscuro: #F54748;
+    --rojoboton: #F86061;
+    --verde: #02A724;
+    --rosa: #FDECEC;
+    --rosaOscuro: #FF5F83;
+    --gris: #676767;
+    --negro: #2E2E2E;
+    --grisOscuro: #363636;
+    --cajanaranjas: rgba(0, 0, 0, 0.08);
+    --freshornage: rgba(46, 46, 46, 1);
+    --separadornaranja: rgba(255, 166, 16, 1);
+    --colorprecio: rgba(46, 46, 46, 1);
+    --colorfree: rgba(165, 165, 165, 1);
+    --tabla: rgba(249, 185, 68, 1);
+
+
+    --fuenteprincpal: "Poppins", sans-serif;
+}
+
+html {
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+    height: 819px;
+    padding: 32px 70px 76px 135px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h5 {
+    margin-left: 1.2rem;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 10px;
+    text-align: right;
+    font-family: var(--fuenteprincpal);
+    color: var(--rojo);
+
+}
+
+
+
+i {
+    width: 34px;
+    height: 34px;
+    margin-top: 3rem;
+}
+
+h3 {
+
+    font-family: var(--fuenteprincpal);
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+input[type="search"]::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    font-family: var(--fuenteprincpal);
+    line-height: 14px;
+    color: black;
+}
+
+/* Header */
+
+.primera_seccion {
+
+    width: 1440px;
+    height: 819px;
+    padding: 32px 70px 76px 0px;
+}
+
+.contenido_principal {
+
+    width: 1235px;
+    height: 711px;
+    margin-left: 135px;
+
+
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegador {
+    display: flex;
+    margin-top: 1rem;
+    height: 24px;
+    left: 564px;
+    text-align: center;
+    font-family: var(--fuenteprincpal);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: .1rem;
+    gap: 3rem;
+}
+
+.navegador--activo,
+.navegador a:hover {
+    Color: var(--rojo);
+}
+
+/* carrito */
+
+.fa-basket-shopping {
+    position: relative;
+    width: 22px;
+    height: 19.2px;
+}
+
+.texto_carrito {
+    top: 32px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--rojo);
+    border: 2px var(--rojo) solid;
+    color: var(--blanco);
+    text-align: center;
+    top: 6rem;
+}
+
+.search {
+    margin-right: 11rem;
+}
+
+
+
+.input_search {
+    margin: 1rem;
+    border: none;
+}
+
+/* main */
+.inicio {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contenido_derecho {
+    width: 578px;
+    height: 542px;
+    margin-top: 197px;
+
+}
+
+
+
+.fresas {
+    display: flex;
+    width: 214px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: var(--rosa);
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_fresa {
+    margin-top: 20px;
+
+}
+
+/* Texto Principal */
+
+h1 {
+    margin-top: 4rem;
+    font-family: var(--fuenteprincpal);
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 88px;
+    margin-top: 1rem;
+    color: var(--negro);
+}
+
+span {
+    color: var(--RojoOscuro);
+}
+
+.parrafo_secundario {
+    margin-top: 2rem;
+    font-family: var(--fuenteprincpal);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: var(--gris);
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    margin-top: 7rem;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.boton_now {
+
+    width: 186px;
+    height: 70px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--rojoboton);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--blancosegundo);
+
+}
+
+.boton_process {
+    width: 70px;
+    height: 70px;
+    margin-left: 4rem;
+    border: none;
+    border-radius: 50%;
+
+
+}
+
+.fa-play {
+    color: var(--amarillo);
+}
+
+.process {
+    font-family: var(--fuenteprincpal);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: var(--grisOscuro);
+}
+
+/* Parte Izquierda */
+
+.parte_derecha {
+
+    display: flex;
+    width: 619px;
+    height: 605px;
+    margin-top: 138px;
+}
+
+.contenedor_naranjas {
+
+    margin-top: 5rem;
+    width: 182px;
+    height: 272px;
+}
+
+.caja_naranjas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15%;
+    width: 182px;
+    height: 235px;
+    margin-top: 2rem;
+    left: 751px;
+    box-shadow: 0px 50px 80px 0px var(--cajanaranjas);
+}
+
+.linea {
+    background-color: var(--separadornaranja);
+    width: 20px;
+    height: 2px;
+    margin-top: .5rem;
+    border-radius: 1px;
+    color: white;
+
+}
+
+.imagen_naranjas {
+    width: 101px;
+    height: 200px;
+}
+
+.fresh {
+    font-family: var(--fuenteprincpal);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: var(--freshornage);
+}
+
+.precio {
+    font-family: var(--fuenteprincpal);
+    margin-top: 1.5rem;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: var(--colorprecio);
+
+}
+
+.free {
+    font-family: var(--fuenteprincpal);
+    margin-top: 1rem;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--colorfree);
+}
+
+.carrito_mas {
+    width: 100px;
+    height: 100px;
+}
+
+/* Chef */
+
+
+.mascara {
+    display: flex;
+    position: relative;
+    width: 417px;
+    height: 605px;
+
+}
+
+.chef {
+    position: absolute;
+    width: 323px;
+    height: 547px;
+    margin-left: 5rem;
+}
+
+.tabla {
+    width: 417px;
+    height: 312px;
+    margin-top: 40%;
+}
+
+/* Delivery*/
+
+.delivery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 160px;
+    height: 74px;
+    border-radius: 12px;
+}
+
+
+
+.minutos {
+    font-family: var(--fuenteprincpal);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.avion {
+
+    margin-top: 7rem;
+    margin-right: 15rem;
+    width: 97.4px;
+    height: 156.02px;
+
+}
